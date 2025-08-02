@@ -15,8 +15,8 @@ vectorstore = create_vector_store("課程介紹.pdf")
 
 
 # ✅ 載入 LINE 憑證
-line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
-handler = WebhookHandler(os.getenv("LINE_CHANNEL_SECRET"))
+line_bot_api = LineBotApi(os.getenv("CHANNEL_ACCESS_TOKEN"))
+handler = WebhookHandler(os.getenv("CHANNEL_SECRET"))
 
 # ✅ Flask 啟動
 app = Flask(__name__)
